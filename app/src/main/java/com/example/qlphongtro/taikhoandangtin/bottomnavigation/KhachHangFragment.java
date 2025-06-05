@@ -1,4 +1,4 @@
-package com.example.qlphongtro.taikhoantimkiem.bottomnavigation;
+package com.example.qlphongtro.taikhoandangtin.bottomnavigation;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,15 +10,12 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.qlphongtro.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class TimKiemFragment extends Fragment {
-    private BottomNavigationView bottomNavigationView;
+public class KhachHangFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_timkiem, container, false);
-        bottomNavigationView = getActivity().findViewById(R.id.bottom_nav);
+        View view = inflater.inflate(R.layout.fragment_khachhang, container, false);
         return view;
     }
 }

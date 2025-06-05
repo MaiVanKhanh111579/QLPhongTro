@@ -1,4 +1,4 @@
-package com.example.qlphongtro.taikhoantimkiem.bottomnavigation;
+package com.example.qlphongtro.taikhoandangtin.bottomnavigation;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,16 +11,16 @@ import androidx.fragment.app.Fragment;
 import com.example.qlphongtro.MainActivity;
 import com.example.qlphongtro.R;
 
-public class TaiKhoanFragment_TimKiem extends Fragment {
+public class TaiKhoanFragment_DangTin extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_taikhoan_timkiem, container, false);
+        View view = inflater.inflate(R.layout.fragment_taikhoan_dangtin, container, false);
 
-        LinearLayout llayout_taikhoan_chuyendoitaikhoan = view.findViewById(R.id.llayout_taikhoan_chuyendoitaikhoan);
-        llayout_taikhoan_chuyendoitaikhoan.setOnClickListener(v -> {
-            ((MainActivity) getActivity()).switchToDangTinMode();
+        LinearLayout llayout_taikhoan_dangtin_chuyendoitaikhoan = view.findViewById(R.id.llayout_taikhoan_dangtin_chuyendoitaikhoan);
+        llayout_taikhoan_dangtin_chuyendoitaikhoan.setOnClickListener(v -> {
+            ((MainActivity) getActivity()).switchToTimKiemMode();
         });
 
         return view;

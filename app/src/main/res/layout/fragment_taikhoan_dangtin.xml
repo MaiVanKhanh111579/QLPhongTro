@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="50dp"
+    tools:ignore="RtlHardcoded,RtlSymmetry,VisualLintBounds">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        tools:ignore="UselessLeaf,UselessParent">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/customer_circle_avatar"
+            android:src="@drawable/ic_launcher_foreground"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_taikhoan_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 điểm"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                tools:ignore="HardcodedText,SpUsage,TextSizeCheck"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mã tài khoản: "
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    tools:ignore="HardcodedText"/>
+                <TextView
+                    android:id="@+id/txt_taikhoan_mataikhoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HCM00001"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llayout_taikhoan_dangtin_chuyendoitaikhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customer_rectangle_radius_chuyentaikhoan"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/linearLayout">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_reload_white"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chuyển sang tìm kiếm"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LLayout_sodutaikhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llayout_taikhoan_dangtin_chuyendoitaikhoan"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/greyEEEEEE"
+        android:background="@drawable/customer_retangle_border"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số dư tài khoản"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            tools:ignore="HardcodedText" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số dư đã duyệt"
+                android:textColor="@color/grey8080"
+                android:textSize="12dp"
+                android:layout_alignParentStart="true"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,SpUsage,TextContrastCheck,TextSizeCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="0"
+                android:layout_alignParentEnd="true"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số dư đang duyệt"
+                android:textColor="@color/grey8080"
+                android:textSize="12dp"
+                android:layout_alignParentStart="true"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,SpUsage,TextContrastCheck,TextSizeCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="0"
+                android:layout_alignParentEnd="true"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+        </RelativeLayout>
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lần giao dịch"
+                android:textColor="@color/grey8080"
+                android:textSize="12dp"
+                android:layout_alignParentStart="true"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,SpUsage,TextContrastCheck,TextSizeCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="0"
+                android:layout_alignParentEnd="true"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+        </RelativeLayout>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/customer_retangle_border"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:id="@+id/txt_taikhoan_machuyenkhoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Mã chuyển khoản"
+                android:textColor="@color/grey8080"
+                android:textSize="12dp"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,SpUsage,TextContrastCheck,TextSizeCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HCM00001"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/txt_taikhoan_machuyenkhoan"
+                tools:ignore="HardcodedText"/>
+
+            <ImageButton
+                android:id="@+id/imgbtn_taikhoan_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@color/white"
+                android:src="@drawable/ic_copy_black"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LLayout_tindang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LLayout_sodutaikhoan"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/greyEEEEEE"
+        android:background="@drawable/customer_retangle_border"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin đăng "
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            tools:ignore="HardcodedText" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tin đăng"
+                android:textColor="@color/grey8080"
+                android:textSize="12dp"
+                android:layout_alignParentStart="true"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,SpUsage,TextContrastCheck,TextSizeCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="0"
+                android:layout_alignParentEnd="true"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lượt xem"
+                android:textColor="@color/grey8080"
+                android:textSize="12dp"
+                android:layout_alignParentStart="true"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,SpUsage,TextContrastCheck,TextSizeCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="0"
+                android:layout_alignParentEnd="true"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LLayout_tindang"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/expandablelistview_taikhoan_dangtin"/>
+    </LinearLayout>
+</RelativeLayout>
