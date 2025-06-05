@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">AppQLPhongTro</string>
+    <string name="yeucauxoataikhoan">Gửi yêu cầu xoá toàn bộ thông tin tài khoản. Sau khi được xử lý, toan bộ thông tin sẽ được xoá và không thể hoàn tác. Các thông tin trong tài khoản này không được tạo tài khoản mới trong 90 ngày</string>
+    <string name="xacnhan_xoataikhoan">Bạn đã đọc kỹ nội dung và vẫn muốn xoá tài khoản?</string>
+    <string name="note_taikhoan_dangtin" tools:ignore="TypographyEllipsis">Dành cho quý khách muốn đăng tin cho thuê/ bán/ quản lý với các nhà/ căn hộ/ phòng trọ...</string>
+    <string name="note_taikhoan_timkiem">Dành cho quý khách muốn tìm kiếm nhà/ căn hộ/ phòng trọ được đăng cho thuê/ bán</string>
+</resources>

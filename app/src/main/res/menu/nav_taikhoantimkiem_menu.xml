@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_timkiem"
+        android:icon="@drawable/ic_search_black"
+        android:title="Tìm kiếm"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/navigation_luutin"
+        android:icon="@drawable/ic_heart_black"
+        android:title="Tin đã lưu"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/navigation_taikhoan_timkiem"
+        android:icon="@drawable/ic_3dot_black"
+        android:title="Tài khoản"
+        tools:ignore="HardcodedText" />
+</menu>
