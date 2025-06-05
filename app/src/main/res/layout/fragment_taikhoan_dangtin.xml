@@ -71,36 +71,42 @@
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/llayout_taikhoan_dangtin_chuyendoitaikhoan"
-        android:layout_width="wrap_content"
+        android:id="@+id/llayout_taikhoan_dangtin_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/customer_rectangle_radius_chuyentaikhoan"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:layout_marginTop="20dp"
+        android:gravity="end"
         android:layout_below="@+id/linearLayout">
-
-        <ImageButton
+        <LinearLayout
+            android:id="@+id/llayout_taikhoan_dangtin_chuyendoitaikhoan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@null"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/ic_reload_white"
-            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Chuyển sang tìm kiếm"
-            android:textColor="@color/white"
-            tools:ignore="HardcodedText" />
+            android:background="@drawable/customer_rectangle_radius_chuyentaikhoan"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_marginTop="20dp"
+            tools:ignore="UselessParent">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_reload_white"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chuyển sang tìm kiếm"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/LLayout_sodutaikhoan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/llayout_taikhoan_dangtin_chuyendoitaikhoan"
+        android:layout_below="@+id/llayout_taikhoan_dangtin_layout"
         android:layout_marginTop="20dp"
         android:padding="10dp"
         android:backgroundTint="@color/greyEEEEEE"
