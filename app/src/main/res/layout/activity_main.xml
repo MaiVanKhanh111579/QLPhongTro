@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white">
 
     <fragment
@@ -12,18 +12,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/nav_graph"
-        android:layout_above="@id/bottom_nav"/>
+        android:layout_above="@id/bottom_nav_view_3items"
+        tools:ignore="FragmentTagUsage"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav_view_3items"
+        app:navGraph="@navigation/nav_graph_timkiem"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_above="@+id/bottom_nav"
+        android:layout_above="@+id/bottom_nav_view_3items"
         android:layout_marginTop="10dp"
         android:background="@color/grey666666" />
 
+    <!-- Bottom Navigation Tìm kiếm (3 items) -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_nav"
+        android:id="@+id/bottom_nav_view_3items"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -33,5 +36,23 @@
         app:itemRippleColor="@null"
         app:itemTextColor="@color/black"
         app:labelVisibilityMode="labeled"
-        tools:ignore="VisualLintBottomNav"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/nav_taikhoantimkiem_menu"
+        android:visibility="visible" />
+
+    <!-- Bottom Navigation Đăng tin (5 items) -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_view_5items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/selector_icon_checked"
+        app:itemRippleColor="@null"
+        app:itemTextColor="@color/black"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/nav_taikhoandangtin_menu"
+        android:visibility="gone" />
 </RelativeLayout>

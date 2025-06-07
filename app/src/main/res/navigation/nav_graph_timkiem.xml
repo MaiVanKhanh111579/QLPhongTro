@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_3items"
+    app:startDestination="@id/navigation_timkiem">
+    <!-- Chế độ tìm kiếm -->
+    <fragment
+        android:id="@+id/navigation_timkiem"
+        android:name="com.example.qlphongtro.taikhoantimkiem.bottomnavigation.TimKiemFragment"
+        tools:layout="@layout/fragment_timkiem"
+        android:label="Tìm kiếm"/>
+    <fragment
+        android:id="@+id/navigation_luutin"
+        android:name="com.example.qlphongtro.taikhoantimkiem.bottomnavigation.LuuTinFragment"
+        tools:layout="@layout/fragment_luutin"
+        android:label="Lưu tin"/>
+    <fragment
+        android:id="@+id/navigation_taikhoan_timkiem"
+        android:name="com.example.qlphongtro.taikhoantimkiem.bottomnavigation.TaiKhoanFragment_TimKiem"
+        tools:layout="@layout/fragment_taikhoan_timkiem"
+        android:label="Tài khoản tìm kiếm">
+    </fragment>
+</navigation>

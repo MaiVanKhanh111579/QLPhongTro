@@ -20,7 +20,8 @@ public class TaiKhoanFragment_TimKiem extends Fragment {
 
         LinearLayout llayout_taikhoan_chuyendoitaikhoan = view.findViewById(R.id.llayout_taikhoan_chuyendoitaikhoan);
         llayout_taikhoan_chuyendoitaikhoan.setOnClickListener(v -> {
-            ((MainActivity) getActivity()).switchToDangTinMode();
+            // Gọi phương thức trong MainActivity để chuyển về Bottom Navigation 3 items
+            ((MainActivity) requireActivity()).switchTo5ItemsNavigation();
         });
 
         return view;
